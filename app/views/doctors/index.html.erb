@@ -1,0 +1,5 @@
+<h1>Welcome to Grey Sloan Memorial Hospital. Here are your doctors:</h1>
+
+<% @doctors.each do |doctor| %>
+  <%= link_to doctor.name, doctor_path(doctor) %> - <%= doctor.department%> <br>
+<% end %>
